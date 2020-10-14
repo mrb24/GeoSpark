@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.datasyslab</groupId>
 	<artifactId>geospark-parent</artifactId>
-	<version>1.4.0</version>
+	<version>1.4.1</version>
 	<packaging>pom</packaging>
 	<name>geospark-parent</name>
 	<url>http://maven.apache.org</url>
@@ -88,6 +88,10 @@
                     <groupId>com.fasterxml.jackson.module</groupId>
                     <artifactId>*</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>javax.servlet-api</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
         <dependency>
@@ -104,6 +108,10 @@
                     <groupId>com.fasterxml.jackson.module</groupId>
                     <artifactId>*</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>javax.servlet-api</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
 	<dependency> 
@@ -119,13 +127,16 @@
 	            <groupId>org.slf4j</groupId> 
 	            <artifactId>slf4j-log4j12</artifactId> 
 	        </exclusion> 
+	        <exclusion>
+              <groupId>javax.servlet</groupId>
+              <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
 	    </exclusions> 
 	</dependency> 
         <dependency>
             <groupId>org.datasyslab</groupId>
             <artifactId>sernetcdf</artifactId>
             <version>0.1.0</version>
-            <scope>provided</scope>
         </dependency>
         <!-- Test -->
         <dependency>
